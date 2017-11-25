@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/bk_main"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayoutBottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:background="@color/bk_logo"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/udacitylogo"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"
+        android:paddingTop="@dimen/logo_padding_margin"
+        android:paddingBottom="@dimen/logo_padding_margin"
+        android:layout_marginBottom="@dimen/logo_padding_margin"
+        android:scaleType="fitCenter"
+
+        />
+
+        <Button
+
+            android:id="@+id/phone"
+            android:layout_below="@id/logo"
+            android:layout_width="@dimen/bt_info_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/medium_space"
+            android:padding="@dimen/small_space"
+            android:background="@color/bk_bt"
+            android:drawableLeft="@drawable/ic_phone_white_48dp"
+            android:text="@string/phone"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textColor="@color/tx_bt_horizontal" />
+
+        <Button
+
+            android:id="@+id/address"
+            android:layout_below="@id/phone"
+            android:layout_width="@dimen/bt_info_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/medium_space"
+            android:padding="@dimen/small_space"
+            android:background="@color/bk_bt"
+            android:drawableLeft="@drawable/ic_map_marker_white_48dp"
+            android:text="@string/address"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textColor="@color/tx_bt_horizontal" />
+
+        <Button
+
+            android:id="@+id/moto"
+            android:layout_below="@id/address"
+            android:layout_width="@dimen/bt_info_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/small_space"
+            android:layout_margin="@dimen/medium_space"
+            android:background="@color/bk_bt"
+            android:drawableLeft="@drawable/ic_thumb_up_white_48dp"
+            android:shadowColor="@color/bk_logo"
+            android:text="@string/moto"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textColor="@color/tx_bt_horizontal" />
+
+
+        <Button
+            android:id="@+id/calltoaction"
+            android:layout_width="@dimen/bt_calltoaction_width"
+            android:layout_height="@dimen/bt_calltoaction_height"
+            android:layout_below="@id/moto"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/medium_space"
+            android:backgroundTint="@color/bk_bt"
+            android:gravity="center"
+            android:text="@string/call"
+            android:textColor="@color/tx_bt_horizontal" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayoutBottom">
+
+        <ImageButton
+            android:id="@+id/gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google_plus"
+
+            />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_toRightOf="@id/gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google_play"
+
+            />
+
+        <ImageButton
+            android:id="@+id/site"
+            android:layout_toRightOf="@id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_web"
+
+            />
+
+        <ImageButton
+            android:id="@+id/blog"
+            android:layout_toRightOf="@id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_blogger"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

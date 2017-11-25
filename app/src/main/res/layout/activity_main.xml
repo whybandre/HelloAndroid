@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bk_main"
+     >
+
+
+    <ImageView
+        android:id="@+id/vlogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:background="@color/bk_logo"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/udacitylogo"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"
+        android:paddingTop="@dimen/logo_padding_margin"
+        android:paddingBottom="@dimen/logo_padding_margin"
+        android:layout_marginBottom="@dimen/logo_padding_margin"
+
+        />
+
+    <LinearLayout
+        android:layout_width="@dimen/bt_info_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vlogo"
+        android:layout_centerInParent="true"
+        android:background="@color/bt_bk_linear"
+        android:id="@+id/vphone"
+        android:layout_margin="@dimen/medium_space">
+
+        <ImageView
+            android:id="@+id/vphonei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bk_bt"
+            android:src="@drawable/ic_phone_white_48dp"
+            android:padding="@dimen/small_space"
+        />
+
+        <TextView
+            android:id="@+id/vtextphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tx_bt_vertical"
+            android:layout_marginLeft="@dimen/small_space"
+            android:background="@color/bt_bk_linear"
+            android:layout_gravity="center"
+            android:text="@string/phone"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/bt_info_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vphone"
+        android:layout_centerInParent="true"
+        android:background="@color/bt_bk_linear"
+        android:id="@+id/vaddress"
+        android:layout_margin="@dimen/medium_space">
+
+        <ImageView
+            android:id="@+id/vmapi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bk_bt"
+            android:src="@drawable/ic_map_marker_white_48dp"
+            android:padding="@dimen/small_space"
+            />
+
+        <TextView
+            android:id="@+id/vtextaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tx_bt_vertical"
+            android:layout_marginLeft="@dimen/small_space"
+            android:background="@color/bt_bk_linear"
+            android:layout_gravity="center"
+            android:text="@string/address"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/bt_info_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vaddress"
+        android:layout_centerInParent="true"
+        android:background="@color/bt_bk_linear"
+        android:id="@+id/vmoto"
+        android:layout_margin="@dimen/medium_space">
+
+        <ImageView
+            android:id="@+id/vlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bk_bt"
+            android:src="@drawable/ic_thumb_up_white_48dp"
+            android:padding="@dimen/small_space"
+
+            />
+
+        <TextView
+            android:id="@+id/vtextmoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tx_bt_vertical"
+            android:layout_marginLeft="@dimen/small_space"
+            android:background="@color/bt_bk_linear"
+            android:layout_gravity="center"
+            android:text="@string/moto"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="@dimen/bt_calltoaction_width"
+        android:layout_height="@dimen/bt_calltoaction_height"
+        android:layout_above="@id/linearLayout"
+        android:layout_margin="@dimen/medium_space"
+        android:backgroundTint="@color/bk_bt"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:onClick="signup"
+        android:text="@string/call"
+        android:textColor="@color/tx_bt_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google_plus"
+            />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_toRightOf="@id/gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google_play"
+
+            />
+
+        <ImageButton
+            android:id="@+id/site"
+            android:layout_toRightOf="@id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_web"
+
+            />
+
+        <ImageButton
+            android:id="@+id/blog"
+            android:layout_toRightOf="@id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_blogger"
+
+
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

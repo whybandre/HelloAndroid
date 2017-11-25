@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#294860</color>
+    <color name="colorPrimaryDark">#172A38</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bk_main">#F3F8F9</color>
+    <color name="bk_logo">#ffffff</color>
+
+    <color name="bk_bt">#02B3E4</color>
+
+    <color name="bt_bk_linear">#ffff</color>
+
+    <color name="tx_bt_vertical">#2e3d49</color>
+
+    <color name="tx_bt_horizontal">#fff</color>
+
+
+</resources>
