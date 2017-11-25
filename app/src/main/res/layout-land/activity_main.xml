@@ -37,13 +37,13 @@
             android:layout_below="@id/logo"
             android:layout_width="@dimen/bt_info_width"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/linearLayout2"
             android:layout_centerHorizontal="true"
             android:layout_margin="@dimen/medium_space"
             android:padding="@dimen/small_space"
             android:background="@color/bk_bt"
             android:drawableLeft="@drawable/ic_phone_white_48dp"
             android:text="@string/phone"
+            android:contentDescription="@string/phone"
             android:textAlignment="gravity"
             android:gravity="center"
             android:textColor="@color/tx_bt_horizontal" />
@@ -54,13 +54,13 @@
             android:layout_below="@id/phone"
             android:layout_width="@dimen/bt_info_width"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/linearLayout2"
             android:layout_centerHorizontal="true"
             android:layout_margin="@dimen/medium_space"
             android:padding="@dimen/small_space"
             android:background="@color/bk_bt"
             android:drawableLeft="@drawable/ic_map_marker_white_48dp"
             android:text="@string/address"
+            android:contentDescription="@string/address"
             android:textAlignment="gravity"
             android:gravity="center"
             android:textColor="@color/tx_bt_horizontal" />
@@ -71,7 +71,6 @@
             android:layout_below="@id/address"
             android:layout_width="@dimen/bt_info_width"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/linearLayout2"
             android:layout_centerHorizontal="true"
             android:padding="@dimen/small_space"
             android:layout_margin="@dimen/medium_space"
@@ -79,6 +78,7 @@
             android:drawableLeft="@drawable/ic_thumb_up_white_48dp"
             android:shadowColor="@color/bk_logo"
             android:text="@string/moto"
+            android:contentDescription="@string/moto"
             android:textAlignment="gravity"
             android:gravity="center"
             android:textColor="@color/tx_bt_horizontal" />
@@ -94,6 +94,7 @@
             android:backgroundTint="@color/bk_bt"
             android:gravity="center"
             android:text="@string/call"
+            android:contentDescription="@string/call"
             android:textColor="@color/tx_bt_horizontal" />
 
         </RelativeLayout>
@@ -112,6 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_google_plus"
+
 
             />
 

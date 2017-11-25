@@ -19,6 +19,7 @@
         android:paddingTop="@dimen/logo_padding_margin"
         android:paddingBottom="@dimen/logo_padding_margin"
         android:layout_marginBottom="@dimen/logo_padding_margin"
+        android:contentDescription="Udacity"
 
         />
 
@@ -38,6 +39,8 @@
             android:background="@color/bk_bt"
             android:src="@drawable/ic_phone_white_48dp"
             android:padding="@dimen/small_space"
+            android:contentDescription="@string/phone"
+
         />
 
         <TextView
@@ -70,6 +73,7 @@
             android:background="@color/bk_bt"
             android:src="@drawable/ic_map_marker_white_48dp"
             android:padding="@dimen/small_space"
+            android:contentDescription="@string/address"
             />
 
         <TextView
@@ -102,6 +106,7 @@
             android:background="@color/bk_bt"
             android:src="@drawable/ic_thumb_up_white_48dp"
             android:padding="@dimen/small_space"
+            android:contentDescription="@string/moto"
 
             />
 
@@ -127,8 +132,8 @@
         android:backgroundTint="@color/bk_bt"
         android:gravity="center"
         android:layout_centerInParent="true"
-        android:onClick="signup"
         android:text="@string/call"
+        android:contentDescription="@string/call"
         android:textColor="@color/tx_bt_horizontal" />
 
 
